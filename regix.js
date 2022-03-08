@@ -1,0 +1,12 @@
+if(/^(?=.*[a-z])/.test(formValue.newPassword)){
+        error.push('lower');
+ }
+      if(/^(?=.*[A-Z])/.test(formValue.newPassword)){
+        error.push('upper');
+      }
+      if(/^(?=.*[?=.*\d])/.test(formValue.newPassword)){
+        error.push('number');
+      }
+      if(/^(?=.*?[^\w\s])/.test(formValue.newPassword)){
+        error.push('specialChar');
+      }
